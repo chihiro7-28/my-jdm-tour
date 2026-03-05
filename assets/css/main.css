@@ -3236,7 +3236,7 @@ input, select, textarea {
 			background-color: #212931;
 			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/chaser4.jpg");
 			background-size: auto,								auto,														100% auto;
-			background-position: background-position: center center, center center, center 50%,								center,														top center;
+			background-position: enter center, center center, center 50%,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
 			background-attachment: scroll,								scroll,														scroll;
 			z-index: -1;
