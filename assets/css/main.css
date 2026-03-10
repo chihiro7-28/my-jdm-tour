@@ -4687,21 +4687,42 @@ input, select, textarea {
 
 	}
 
-	/* 1280px以上の巨大な画面でも強制的に表示させる */
+	/* --- 最終解決策 --- */
+
+/* 1. 画面サイズを問わず、全ての #intro 背景を固定 */
+	#intro {
+	    background-image: url("../images/overlay.png"), 
+	                      linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+	                      url("../images/chaser4.jpg") !important;
+	    background-size: auto, cover, cover !important;
+	    background-position: center center, center center, center 75% !important;
+	    opacity: 1 !important;
+	    visibility: visible !important;
+	    display: flex !important; /* PCで消えるのを防ぐ */
+	}
+
+	/* 2. PCの大画面（1281px以上）の時にテンプレートが隠しにくるのを完全にブロック */
 	@media screen and (min-width: 1281px) {
 	    #intro {
 	        background-image: url("../images/overlay.png"), 
 	                          linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
 	                          url("../images/chaser4.jpg") !important;
-	        background-size: auto, cover, cover !important;
-	        background-position: center center, center center, center 75% !important;
 	        opacity: 1 !important;
 	        visibility: visible !important;
 	    }
 	}
 
-	/* 念のため、is-preload（読み込み中）による非表示を全サイズで無効化 */
-	body.is-preload #intro {
+	/* 3. JSやテンプレートが「読み込み中」として画面を隠すのを強制解除 */
+	body.is-preload #intro,
+	body.is-preload #intro:before,
+	body.is-preload #intro:after,
+	.is-preload #intro {
 	    opacity: 1 !important;
 	    visibility: visible !important;
+	    filter: none !important;
+	}
+
+	/* 4. 邪魔な :after レイヤーを消す */
+	#intro:after {
+	    display: none !important;
 	}
