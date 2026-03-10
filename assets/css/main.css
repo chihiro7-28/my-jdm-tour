@@ -4686,3 +4686,16 @@ input, select, textarea {
 		}
 
 	}
+
+	#intro:after {
+	    background-image: url("../../images/overlay.png"), 
+	                      linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+	                      url("../../images/chaser4.jpg") !important;
+	    
+	    /* 位置も3枚分しっかり固定する */
+	    background-position: center center, center center, center 50% !important;
+	    
+	    /* これが重要：JSが透明度をいじっても強制的に表示させる */
+	    opacity: 1 !important;
+	    visibility: visible !important;
+	}
