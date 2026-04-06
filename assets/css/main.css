@@ -2967,7 +2967,7 @@ input, select, textarea {
 					display: block;
 					position: absolute;
 					top: 50%;
-					width: calc(50% - 6rem);
+					width: calc(40% - 6rem);
 					border-top: solid 2px;
 				}
 
@@ -3242,7 +3242,7 @@ input, select, textarea {
 		    background-size: auto, cover, cover;
 		    
 		    /* 3枚それぞれの位置：チェイサーを 60% の高さに固定 */
-		    background-position: center center, center center, center 60% !important;
+		    background-position: center center, center center, 60% 90% !important;
 		    
 		    /* 3枚それぞれの繰り返し設定 */
 		    background-repeat: repeat, no-repeat, no-repeat;
