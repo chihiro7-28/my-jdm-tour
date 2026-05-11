@@ -787,7 +787,7 @@
   /* ── LIGHTBOX ── */
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
   }
 
@@ -1285,23 +1285,31 @@
     <div style="margin-top:0.75rem;">
       <p class="section-label reveal" style="margin-bottom:1rem;">Main Spots</p>
       <div class="gallery-grid">
-        <div class="gallery-item reveal delay-1" data-src="https://chihiro7-28.github.io/my-jdm-tour/images/DSC02982.JPG" data-caption="Nagoya Station">
-          <img src="https://chihiro7-28.github.io/my-jdm-tour/images/DSC02982.JPG" alt="JZX100 Chaser at Nagoya Station">
+        <div class="gallery-item reveal delay-1"
+          data-caption="Nagoya Station"
+          data-photos='["https://chihiro7-28.github.io/my-jdm-tour/images/spots/nagoya-station/IMG_0810_2.jpeg","https://chihiro7-28.github.io/my-jdm-tour/images/spots/nagoya-station/IMG_0812_2.jpeg","https://chihiro7-28.github.io/my-jdm-tour/images/spots/nagoya-station/IMG_0821_2.jpeg"]'>
+          <img src="https://chihiro7-28.github.io/my-jdm-tour/images/spots/nagoya-station/IMG_0810_2.jpeg" alt="Nagoya Station" style="filter:brightness(0.7) contrast(1.05);">
           <div class="gallery-item-overlay"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
-          <div class="gallery-item-caption">Nagoya Station</div>
+          <div class="gallery-item-caption">Nagoya Station <span style="color:var(--gold); margin-left:0.4rem;">3 photos</span></div>
         </div>
-        <div class="gallery-item reveal delay-2" data-src="https://chihiro7-28.github.io/my-jdm-tour/images/DSC03029.JPG" data-caption="Meiko Triton">
-          <img src="https://chihiro7-28.github.io/my-jdm-tour/images/DSC03029.JPG" alt="Chaser at Meiko Triton">
+        <div class="gallery-item reveal delay-2"
+          data-caption="Meiko Triton"
+          data-photos='["https://chihiro7-28.github.io/my-jdm-tour/images/DSC03029.JPG"]'>
+          <img src="https://chihiro7-28.github.io/my-jdm-tour/images/DSC03029.JPG" alt="Meiko Triton" style="filter:brightness(0.7) contrast(1.05);">
           <div class="gallery-item-overlay"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
           <div class="gallery-item-caption">Meiko Triton</div>
         </div>
-        <div class="gallery-item reveal delay-3" data-src="https://chihiro7-28.github.io/my-jdm-tour/images/DSC03043.JPG" data-caption="Triton Night Shot">
-          <img src="https://chihiro7-28.github.io/my-jdm-tour/images/DSC03043.JPG" alt="Night shot at Triton bridge">
+        <div class="gallery-item reveal delay-3"
+          data-caption="Triton — Night"
+          data-photos='["https://chihiro7-28.github.io/my-jdm-tour/images/DSC03043.JPG"]'>
+          <img src="https://chihiro7-28.github.io/my-jdm-tour/images/DSC03043.JPG" alt="Triton Night" style="filter:brightness(0.7) contrast(1.05);">
           <div class="gallery-item-overlay"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
           <div class="gallery-item-caption">Triton — Night</div>
         </div>
-        <div class="gallery-item reveal delay-1" data-src="https://chihiro7-28.github.io/my-jdm-tour/images/interior2.jpg" data-caption="Interior">
-          <img src="https://chihiro7-28.github.io/my-jdm-tour/images/interior2.jpg" alt="Chaser interior">
+        <div class="gallery-item reveal delay-1"
+          data-caption="Interior"
+          data-photos='["https://chihiro7-28.github.io/my-jdm-tour/images/IMG_3703.jpeg"]'>
+          <img src="https://chihiro7-28.github.io/my-jdm-tour/images/IMG_3703.jpeg" alt="Chaser interior" style="filter:brightness(0.7) contrast(1.05); object-position: center bottom;">
           <div class="gallery-item-overlay"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
           <div class="gallery-item-caption">Interior</div>
         </div>
@@ -1315,13 +1323,17 @@
         <span style="font-family:'Barlow Condensed',sans-serif; font-size:0.8rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold);">Available on request — ¥3,000 per location</span>
       </div>
       <div class="gallery-grid">
-        <div class="gallery-item reveal delay-1" data-src="https://chihiro7-28.github.io/my-jdm-tour/images/DSC02648.jpeg" data-caption="Green Door — Shiomi">
+        <div class="gallery-item reveal delay-1"
+          data-caption="Green Door — Shiomi"
+          data-photos='["https://chihiro7-28.github.io/my-jdm-tour/images/DSC02648.jpeg"]'>
           <img src="https://chihiro7-28.github.io/my-jdm-tour/images/DSC02648.jpeg" alt="Green door photo spot" style="filter:brightness(0.7) contrast(1.05);">
           <div class="gallery-item-overlay"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
           <div class="gallery-item-caption">Green Door — Shiomi</div>
         </div>
-        <div class="gallery-item reveal delay-2" data-src="https://chihiro7-28.github.io/my-jdm-tour/images/IMG_8874.jpeg" data-caption="Aquarium Parking Rooftop">
-          <img src="https://chihiro7-28.github.io/my-jdm-tour/images/IMG_8874.jpeg" alt="Aquarium parking rooftop view" style="filter:brightness(0.7) contrast(1.05);">
+        <div class="gallery-item reveal delay-2"
+          data-caption="Aquarium Parking Rooftop"
+          data-photos='["https://chihiro7-28.github.io/my-jdm-tour/images/IMG_8874.jpeg"]'>
+          <img src="https://chihiro7-28.github.io/my-jdm-tour/images/IMG_8874.jpeg" alt="Aquarium parking rooftop" style="filter:brightness(0.7) contrast(1.05);">
           <div class="gallery-item-overlay"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
           <div class="gallery-item-caption">Aquarium Parking Rooftop</div>
         </div>
@@ -1476,7 +1488,7 @@ const specObserver = new IntersectionObserver((entries) => {
 
 specRows.forEach(row => specObserver.observe(row));
 
-// Lightbox
+// Lightbox — アルバム対応
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
 const lightboxCaption = document.getElementById('lightboxCaption');
@@ -1485,17 +1497,27 @@ const lightboxClose = document.getElementById('lightboxClose');
 const lightboxPrev = document.getElementById('lightboxPrev');
 const lightboxNext = document.getElementById('lightboxNext');
 
-const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
-let currentIndex = 0;
+let currentPhotos = [];
+let currentPhotoIndex = 0;
 
-function openLightbox(index) {
-  currentIndex = index;
-  const item = galleryItems[index];
-  lightboxImg.src = item.dataset.src;
-  lightboxCaption.textContent = item.dataset.caption || '';
-  lightboxCounter.textContent = `${index + 1} / ${galleryItems.length}`;
+function openLightbox(item) {
+  const photos = JSON.parse(item.dataset.photos || '[]');
+  const caption = item.dataset.caption || '';
+  currentPhotos = photos;
+  currentPhotoIndex = 0;
+  lightboxCaption.textContent = caption;
+  updateLightboxImage();
   lightbox.classList.add('active');
   document.body.style.overflow = 'hidden';
+}
+
+function updateLightboxImage() {
+  lightboxImg.src = currentPhotos[currentPhotoIndex];
+  lightboxCounter.textContent = currentPhotos.length > 1
+    ? `${currentPhotoIndex + 1} / ${currentPhotos.length}`
+    : '';
+  lightboxPrev.style.display = currentPhotos.length > 1 ? 'flex' : 'none';
+  lightboxNext.style.display = currentPhotos.length > 1 ? 'flex' : 'none';
 }
 
 function closeLightbox() {
@@ -1504,17 +1526,17 @@ function closeLightbox() {
 }
 
 function showPrev() {
-  currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
-  openLightbox(currentIndex);
+  currentPhotoIndex = (currentPhotoIndex - 1 + currentPhotos.length) % currentPhotos.length;
+  updateLightboxImage();
 }
 
 function showNext() {
-  currentIndex = (currentIndex + 1) % galleryItems.length;
-  openLightbox(currentIndex);
+  currentPhotoIndex = (currentPhotoIndex + 1) % currentPhotos.length;
+  updateLightboxImage();
 }
 
-galleryItems.forEach((item, i) => {
-  item.addEventListener('click', () => openLightbox(i));
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('click', () => openLightbox(item));
 });
 
 lightboxClose.addEventListener('click', closeLightbox);
@@ -1531,6 +1553,14 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowLeft') showPrev();
   if (e.key === 'ArrowRight') showNext();
 });
+
+// スワイプ対応
+let touchStartX = 0;
+lightbox.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
+lightbox.addEventListener('touchend', (e) => {
+  const diff = touchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 50) diff > 0 ? showNext() : showPrev();
+}, { passive: true });
 
 // スワイプ対応
 let touchStartX = 0;
