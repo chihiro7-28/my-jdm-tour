@@ -5,6 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JDM Nagoya | JZX100 Chaser Tour Experience</title>
 <meta name="description" content="Ride through Nagoya's underground JDM scene in a real JZX100 Chaser Tourer V. Night drives, drift culture, and authentic Japanese car culture — only on Airbnb.">
+
+<!-- OGP -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chihiro7-28.github.io/my-jdm-tour/">
+<meta property="og:title" content="JDM Nagoya | Ride the JDM — JZX100 Chaser Tour">
+<meta property="og:description" content="Ride through Nagoya in a real JZX100 Chaser Tourer V. City to port, 1JZ soundtrack, authentic Japanese car culture. Book on Airbnb.">
+<meta property="og:image" content="https://chihiro7-28.github.io/my-jdm-tour/images/DSC02982.JPG">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="JDM Nagoya">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="JDM Nagoya | Ride the JDM — JZX100 Chaser Tour">
+<meta name="twitter:description" content="Ride through Nagoya in a real JZX100 Chaser Tourer V. City to port, 1JZ soundtrack, authentic Japanese car culture. Book on Airbnb.">
+<meta name="twitter:image" content="https://chihiro7-28.github.io/my-jdm-tour/images/DSC02982.JPG">
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230A0A0A'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-family='Arial Black,sans-serif' font-weight='900' font-size='11' letter-spacing='-0.5' fill='%23C9A84C'>JDM</text></svg>">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RDDG2N0K39"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RDDG2N0K39');
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
@@ -15,6 +42,7 @@
     --red: #D0021B;
     --red-dim: #8a0112;
     --gold: #C9A84C;
+    --gold-dim: #8a6e2f;
     --off-white: #E8E4DC;
     --mid: #888;
     --dark: #0A0A0A;
@@ -57,7 +85,7 @@
     text-decoration: none;
   }
 
-  .nav-logo span { color: var(--red); }
+  .nav-logo span { color: var(--gold); }
 
   .nav-links {
     display: flex;
@@ -101,6 +129,22 @@
     height: 16px;
     background: var(--border);
   }
+
+  .nav-mobile-sns {
+    display: none;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-mobile-sns a {
+    color: var(--off-white);
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-mobile-sns a:hover { opacity: 1; }
 
   /* hamburger */
   .nav-toggle {
@@ -160,7 +204,7 @@
     font-size: 0.8rem;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: var(--red);
+    color: var(--gold);
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
@@ -172,7 +216,7 @@
     display: inline-block;
     width: 32px;
     height: 1px;
-    background: var(--red);
+    background: var(--gold);
   }
 
   .hero-title {
@@ -186,7 +230,7 @@
 
   .hero-title em {
     font-style: normal;
-    color: var(--red);
+    color: var(--gold);
   }
 
   .hero-sub {
@@ -202,7 +246,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    background: var(--red);
+    background: var(--gold);
     color: #fff;
     text-decoration: none;
     padding: 1rem 2.2rem;
@@ -253,7 +297,7 @@
     font-size: 0.75rem;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: var(--red);
+    color: var(--gold);
     margin-bottom: 0.75rem;
     display: flex;
     align-items: center;
@@ -265,7 +309,7 @@
     display: inline-block;
     width: 24px;
     height: 1px;
-    background: var(--red);
+    background: var(--gold);
   }
 
   .section-title {
@@ -428,14 +472,14 @@
   .step-icon {
     width: 36px;
     height: 36px;
-    border: 1px solid var(--red);
+    border: 1px solid var(--gold);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.2rem;
   }
 
-  .step-icon svg { stroke: var(--red); }
+  .step-icon svg { stroke: var(--gold); }
 
   .exp-step h3 {
     font-family: 'Barlow Condensed', sans-serif;
@@ -603,14 +647,14 @@
     display: inline-block;
     width: 5px;
     height: 5px;
-    background: var(--red);
+    background: var(--gold);
     flex-shrink: 0;
   }
 
   .book-btn {
     display: block;
     text-align: center;
-    background: var(--red);
+    background: var(--gold);
     color: #fff;
     text-decoration: none;
     padding: 1.1rem 2rem;
@@ -652,7 +696,7 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: var(--red-dim);
+    background: var(--gold-dim);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -716,7 +760,7 @@
     color: var(--off-white);
   }
 
-  .footer-logo span { color: var(--red); }
+  .footer-logo span { color: var(--gold); }
 
   .footer-links {
     display: flex;
@@ -747,6 +791,9 @@
     nav { padding: 1rem 1.5rem; }
     .nav-links, .nav-social, .nav-divider { display: none; }
     .nav-toggle { display: flex; }
+    .nav-mobile-sns { display: flex; }
+    .nav-open .nav-close { display: block; }
+    .nav-links .mobile-sns { display: flex; }
 
     #hero { padding: 0 1.5rem 4rem; }
     .hero-scroll { display: none; }
@@ -784,11 +831,204 @@
     .footer-links { flex-wrap: wrap; gap: 1rem; }
   }
 
+  /* ── CURSOR EFFECT ── */
+  .cursor-dot {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background: var(--gold);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease, opacity 0.3s ease;
+  }
+
+  .cursor-ring {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(201,168,76,0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9997;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
+  }
+
+  .cursor-particle {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background: var(--gold);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9996;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (hover: none) {
+    .cursor-dot, .cursor-ring, .cursor-particle { display: none; }
+  }
+
+  /* ── MARQUEE ── */
+  .marquee-wrap {
+    background: var(--dark2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+    padding: 0.9rem 0;
+    white-space: nowrap;
+  }
+
+  .marquee-track {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--mid);
+  }
+
+  .marquee-track span { margin: 0 1rem; }
+
+  .marquee-dot {
+    color: var(--gold) !important;
+    margin: 0 0.5rem !important;
+  }
+
+  .marquee-wrap:hover .marquee-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ── LOADING ── */
+  #loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: var(--dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+  }
+
+  #loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .loader-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.3em;
+    color: var(--off-white);
+    opacity: 0;
+    transform: translateY(16px);
+    animation: loaderFadeIn 0.8s cubic-bezier(0.16,1,0.3,1) 0.2s forwards;
+  }
+
+  .loader-logo span { color: var(--gold); }
+
+  .loader-line {
+    width: 0;
+    height: 1px;
+    background: var(--gold);
+    animation: loaderLine 1s ease 0.6s forwards;
+  }
+
+  .loader-sub {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--mid);
+    opacity: 0;
+    animation: loaderFadeIn 0.6s ease 1s forwards;
+  }
+
+  @keyframes loaderFadeIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes loaderLine {
+    to { width: 120px; }
+  }
+
+  /* ── FLOATING BOOK BUTTON ── */
+  .float-book {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 90;
+    background: var(--gold);
+    color: var(--dark);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.75rem 1.4rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .float-book:hover {
+    background: #d4b05a;
+    transform: translateY(-2px);
+  }
+
+  /* ── CHEKI SLIDER ── */
+  .cheki-slider {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 0.25rem;
+  }
+  .cheki-slider::-webkit-scrollbar { display: none; }
+
+  .cheki-slide {
+    flex-shrink: 0;
+    width: 160px;
+    height: 240px;
+    scroll-snap-align: start;
+    cursor: pointer;
+  }
+
   /* ── LIGHTBOX ── */
   .gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
+  }
+
+  .gallery-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+
+  @media (max-width: 900px) {
+    .gallery-grid-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 600px) {
+    .gallery-grid-3 { grid-template-columns: 1fr; }
   }
 
   .gallery-item {
@@ -1069,29 +1309,58 @@
   }
 
   /* mobile nav open */
-  .nav-open .nav-links,
-  .nav-open .nav-social {
+  .nav-open .nav-links {
     display: flex;
     flex-direction: column;
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(10,10,10,0.97);
+    background: rgba(10,10,10,0.98);
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: flex-start;
+    padding-top: 4.5rem;
+    gap: 1.75rem;
     z-index: 99;
+    list-style: none;
   }
 
-  .nav-open .nav-links a,
-  .nav-open .nav-social a {
-    font-size: 1.2rem;
+  .nav-open .nav-links a {
+    font-size: 1.4rem;
     letter-spacing: 0.2em;
   }
 
+  .nav-open .nav-social {
+    display: none;
+  }
+
   .nav-open .nav-divider { display: none; }
+
+  /* 閉じるボタン */
+  .nav-close {
+    display: none;
+    position: fixed;
+    top: 1.2rem;
+    right: 1.5rem;
+    z-index: 200;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--off-white);
+    padding: 0.5rem;
+  }
 </style>
 </head>
 <body>
+
+<!-- CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">JDM<span>.</span>NAGOYA</div>
+  <div class="loader-line"></div>
+  <div class="loader-sub">Nagoya · Japan · JZX100</div>
+</div>
 
 <!-- NAV -->
 <nav id="nav">
@@ -1100,16 +1369,45 @@
     <li><a href="#machine">The Machine</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#media">Gallery</a></li>
+    <li><a href="#access">Access</a></li>
     <li><a href="#book">Book</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li style="border-top:1px solid var(--border); padding-top:1.5rem; display:none; gap:1.5rem;" class="mobile-sns">
+      <a href="https://www.tiktok.com/@jzx100_chaser_v" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:0.4rem; font-size:0.9rem !important;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>TikTok
+      </a>
+      <a href="https://www.instagram.com/jzx100_chaser_v7" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:0.4rem; font-size:0.9rem !important;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram
+      </a>
+    </li>
   </ul>
   <div class="nav-social">
-    <a href="https://www.tiktok.com/@jzx100_chaser_v" target="_blank" rel="noopener">TikTok</a>
+    <a href="https://www.tiktok.com/@jzx100_chaser_v" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:0.4rem;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+      TikTok
+    </a>
     <div class="nav-divider"></div>
-    <a href="https://www.instagram.com/jzx100_chaser_v7" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.instagram.com/jzx100_chaser_v7" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:0.4rem;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      Instagram
+    </a>
   </div>
-  <div class="nav-toggle" id="navToggle" role="button" aria-label="Menu">
-    <span></span><span></span><span></span>
+  <div style="display:flex; align-items:center; gap:1rem;">
+    <div class="nav-mobile-sns">
+      <a href="https://www.tiktok.com/@jzx100_chaser_v" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/jzx100_chaser_v7" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
+    <div class="nav-toggle" id="navToggle" role="button" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
   </div>
+  <button class="nav-close" id="navClose" aria-label="Close menu">
+    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -1128,6 +1426,28 @@
   </div>
   <p class="hero-scroll">Scroll</p>
 </section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>JZX100</span><span class="marquee-dot">·</span>
+    <span>NAGOYA</span><span class="marquee-dot">·</span>
+    <span>1JZ-GTE</span><span class="marquee-dot">·</span>
+    <span>JDM</span><span class="marquee-dot">·</span>
+    <span>TOURER V</span><span class="marquee-dot">·</span>
+    <span>ORIGIN LABO</span><span class="marquee-dot">·</span>
+    <span>MEIKO TRITON</span><span class="marquee-dot">·</span>
+    <span>DRIFT CULTURE</span><span class="marquee-dot">·</span>
+    <span>JZX100</span><span class="marquee-dot">·</span>
+    <span>NAGOYA</span><span class="marquee-dot">·</span>
+    <span>1JZ-GTE</span><span class="marquee-dot">·</span>
+    <span>JDM</span><span class="marquee-dot">·</span>
+    <span>TOURER V</span><span class="marquee-dot">·</span>
+    <span>ORIGIN LABO</span><span class="marquee-dot">·</span>
+    <span>MEIKO TRITON</span><span class="marquee-dot">·</span>
+    <span>DRIFT CULTURE</span><span class="marquee-dot">·</span>
+  </div>
+</div>
 
 <!-- MACHINE -->
 <section id="machine">
@@ -1284,7 +1604,7 @@
     <!-- Main spots photo grid -->
     <div style="margin-top:0.75rem;">
       <p class="section-label reveal" style="margin-bottom:1rem;">Main Spots</p>
-      <div class="gallery-grid">
+      <div class="gallery-grid-3">
         <div class="gallery-item reveal delay-1"
           data-caption="Nagoya Station"
           data-photos='["https://chihiro7-28.github.io/my-jdm-tour/images/spots/nagoya-station/IMG_0810_2.jpeg","https://chihiro7-28.github.io/my-jdm-tour/images/spots/nagoya-station/IMG_0812_2.jpeg","https://chihiro7-28.github.io/my-jdm-tour/images/spots/nagoya-station/IMG_0821_2.jpeg"]'>
@@ -1293,25 +1613,18 @@
           <div class="gallery-item-caption">Nagoya Station <span style="color:var(--gold); margin-left:0.4rem;">3 photos</span></div>
         </div>
         <div class="gallery-item reveal delay-2"
-          data-caption="Meiko Triton"
-          data-photos='["https://chihiro7-28.github.io/my-jdm-tour/images/oasis.jpeg"]'>
-          <img src="https://chihiro7-28.github.io/my-jdm-tour/images/oasis.jpeg" alt="Meiko Triton" style="filter:brightness(0.7) contrast(1.05);">
+          data-caption="Oasis 21"
+          data-photos='["https://chihiro7-28.github.io/my-jdm-tour/images/spots/oasis/oasis.jpeg"]'>
+          <img src="https://chihiro7-28.github.io/my-jdm-tour/images/spots/oasis/oasis.jpeg" alt="Oasis 21" style="filter:brightness(0.7) contrast(1.05);">
           <div class="gallery-item-overlay"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
           <div class="gallery-item-caption">Oasis 21</div>
         </div>
         <div class="gallery-item reveal delay-3"
-          data-caption="Triton — Night"
+          data-caption="Meiko Triton"
           data-photos='["https://chihiro7-28.github.io/my-jdm-tour/images/DSC03043.JPG"]'>
-          <img src="https://chihiro7-28.github.io/my-jdm-tour/images/DSC03043.JPG" alt="Triton Night" style="filter:brightness(0.7) contrast(1.05);">
+          <img src="https://chihiro7-28.github.io/my-jdm-tour/images/DSC03043.JPG" alt="Meiko Triton" style="filter:brightness(0.7) contrast(1.05);">
           <div class="gallery-item-overlay"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
           <div class="gallery-item-caption">Meiko Triton</div>
-        </div>
-        <div class="gallery-item reveal delay-1"
-          data-caption="Interior"
-          data-photos='["https://chihiro7-28.github.io/my-jdm-tour/images/IMG_3703.jpeg"]'>
-          <img src="https://chihiro7-28.github.io/my-jdm-tour/images/IMG_3703.jpeg" alt="Chaser interior" style="filter:brightness(0.7) contrast(1.05); object-position: center bottom;">
-          <div class="gallery-item-overlay"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
-          <div class="gallery-item-caption">Interior</div>
         </div>
       </div>
     </div>
@@ -1324,24 +1637,73 @@
       </div>
       <div class="gallery-grid">
         <div class="gallery-item reveal delay-1"
-          data-caption="Green Door — Shiomi"
+          data-caption="Green Door — Inae"
           data-photos='["https://chihiro7-28.github.io/my-jdm-tour/images/DSC02648.jpeg"]'>
           <img src="https://chihiro7-28.github.io/my-jdm-tour/images/DSC02648.jpeg" alt="Green door photo spot" style="filter:brightness(0.7) contrast(1.05);">
           <div class="gallery-item-overlay"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
-          <div class="gallery-item-caption">Green Door — Shiomi</div>
+          <div class="gallery-item-caption">Green Door — Inae</div>
         </div>
         <div class="gallery-item reveal delay-2"
-          data-caption="Aquarium Parking Rooftop"
+          data-caption="Aquarium Car Park"
           data-photos='["https://chihiro7-28.github.io/my-jdm-tour/images/IMG_8874.jpeg"]'>
           <img src="https://chihiro7-28.github.io/my-jdm-tour/images/IMG_8874.jpeg" alt="Aquarium parking rooftop" style="filter:brightness(0.7) contrast(1.05);">
           <div class="gallery-item-overlay"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
-          <div class="gallery-item-caption">Aquarium Parking Rooftop</div>
+          <div class="gallery-item-caption">Aquarium Car Park</div>
         </div>
       </div>
       <p style="font-size:0.82rem; color:var(--mid); margin-top:1rem;">Have a specific spot in mind? Get in touch — we're happy to plan a custom route.</p>
     </div>
+
+    <!-- Cheki Section -->
+    <div style="margin-top:2.5rem; padding-top:2.5rem; border-top:1px solid var(--border);">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:1rem; margin-bottom:0.5rem;">
+        <p class="section-label">Cheki — Instant Memories</p>
+        <span style="font-family:'Barlow Condensed',sans-serif; font-size:0.8rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold);">¥500 per print after first 10 guests</span>
+      </div>
+      <p style="font-size:0.9rem; color:var(--mid); margin-bottom:1.5rem;">Capture the moment on film. A complimentary cheki print for the first 10 guests — your JDM memory to take home.</p>
+
+      <!-- Counter + Slider -->
+      <div style="display:flex; align-items:flex-start; gap:1.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+
+        <!-- Counter -->
+        <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.25rem; background:rgba(255,255,255,0.03); border:1px solid var(--border); padding:1.2rem 2rem; min-width:160px; flex-shrink:0;">
+          <span style="font-family:'Barlow Condensed',sans-serif; font-size:0.72rem; letter-spacing:0.25em; text-transform:uppercase; color:var(--mid);">Free prints</span>
+          <span id="cheki-counter" style="font-family:'Barlow Condensed',sans-serif; font-size:2.8rem; font-weight:700; line-height:1; color:var(--gold);">9</span>
+          <span style="font-family:'Barlow Condensed',sans-serif; font-size:0.72rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--mid);">of 10 remaining</span>
+        </div>
+
+        <!-- Cheki horizontal scroll slider -->
+        <div style="flex:1; min-width:0; overflow:hidden;">
+          <div class="cheki-slider">
+            <div class="cheki-slide gallery-item"
+              data-caption="Cheki"
+              data-photos='["https://chihiro7-28.github.io/my-jdm-tour/images/spots/nagoya-station/IMG_0821_2.jpeg","https://chihiro7-28.github.io/my-jdm-tour/images/spots/nagoya-station/IMG_0812_2.jpeg"]'>
+              <img src="https://chihiro7-28.github.io/my-jdm-tour/images/spots/nagoya-station/IMG_0821_2.jpeg" alt="Cheki 1" style="filter:brightness(0.85) contrast(1.05);">
+              <div class="gallery-item-overlay"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+            </div>
+            <div class="cheki-slide gallery-item"
+              data-caption="Cheki"
+              data-photos='["https://chihiro7-28.github.io/my-jdm-tour/images/spots/nagoya-station/IMG_0812_2.jpeg","https://chihiro7-28.github.io/my-jdm-tour/images/spots/nagoya-station/IMG_0821_2.jpeg"]'>
+              <img src="https://chihiro7-28.github.io/my-jdm-tour/images/spots/nagoya-station/IMG_0812_2.jpeg" alt="Cheki 2" style="filter:brightness(0.85) contrast(1.05);">
+              <div class="gallery-item-overlay"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+            </div>
+            <!-- 写真が増えたらここにcheki-slideを追加 -->
+          </div>
+          <p style="font-size:0.75rem; color:var(--mid); margin-top:0.5rem; letter-spacing:0.05em;">← swipe to see more</p>
+        </div>
+
+      </div>
+      <p style="font-size:0.82rem; color:var(--mid); margin-top:0.5rem;">Cheki is an instant film camera — your photo is printed on the spot, right after it's taken. A physical memory to take home from your tour.</p>
+    </div>
   </div>
 </section>
+
+<!-- FLOATING BOOK BUTTON -->
+<a href="https://www.airbnb.jp/experiences/6938551?s=67&unique_share_id=44b1274b-82cf-4dbd-b92b-be43bf6dc6e4"
+   target="_blank" rel="noopener" class="float-book">
+  <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+  Book Now
+</a>
 
 <!-- LIGHTBOX -->
 <div id="lightbox">
@@ -1361,6 +1723,21 @@
   <div class="lightbox-counter" id="lightboxCounter"></div>
 </div>
 
+<!-- ACCESS -->
+<section id="access" style="background:var(--dark2); border-top:1px solid var(--border); padding:6rem 2.5rem;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <p class="section-label reveal">Getting There</p>
+    <h2 class="section-title reveal delay-1">Meeting <br>Point</h2>
+    <p class="section-body reveal delay-2" style="margin-bottom:2rem;">We meet at the <strong style="color:var(--off-white);">Gold Clock (金時計)</strong> inside Nagoya Station — the most iconic landmark in the station. Easy to find, impossible to miss.</p>
+    <div style="border:1px solid var(--border); overflow:hidden; reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d815.5!2d136.88213!3d35.17096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003771e8b6db6b7%3A0x1b0e87f2e3e3e3e3!2z5ZCN5Y-k5bGx6aeF-Lui5pmC6Kqe5pmC!5e0!3m2!1sen!2sjp!4v1"
+        width="100%" height="360" style="border:0; display:block; filter:invert(90%) hue-rotate(180deg);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p style="font-size:0.82rem; color:var(--mid); margin-top:1rem;">📍 Gold Clock (金時計) — Nagoya Station Central Concourse</p>
+  </div>
+</section>
+
 <!-- BOOK -->
 <section id="book">
   <div class="book-inner">
@@ -1372,7 +1749,7 @@
       <div class="faq">
         <div class="faq-item">
           <p class="faq-q">How many people can join?</p>
-          <p class="faq-a">The Chaser seats 1 guest (passenger seat). Private, one-on-one experience.</p>
+          <p class="faq-a">The Chaser accommodates up to 3 guests. For groups of 1–2, guests rotate between the front and rear seat. For groups of 3, all guests ride in the rear — it's a cozy fit, so groups of 3 are available on private tours only.</p>
         </div>
         <div class="faq-item">
           <p class="faq-q">Is English OK?</p>
@@ -1380,11 +1757,19 @@
         </div>
         <div class="faq-item">
           <p class="faq-q">Where does it start?</p>
-          <p class="faq-a">Meeting point is in central Nagoya. Exact location confirmed after booking.</p>
+          <p class="faq-a">We meet at the Gold Clock (金時計) inside Nagoya Station — the most iconic landmark in the station. Easy to find, impossible to miss.</p>
         </div>
         <div class="faq-item">
           <p class="faq-q">Can I take photos and video?</p>
           <p class="faq-a">Absolutely — that's the point. Bring your camera, bring your phone.</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">Can I request dates not shown on Airbnb?</p>
+          <p class="faq-a">Monday through Thursday are not available. Fridays are available from 8:00 PM only. Saturdays and Sundays are flexible. Japanese public holidays may also be available. If you're not sure, just send us a message — we're happy to check!</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">Can I change the time after booking?</p>
+          <p class="faq-a">Yes, time changes are possible up to 2 days before the tour. Please send a message through Airbnb as soon as possible.</p>
         </div>
       </div>
     </div>
@@ -1397,11 +1782,11 @@
           <span class="price-unit">Airbnb for pricing</span>
         </div>
         <ul class="include-list">
-          <li>Private ride in the JZX100 Chaser Tourer V</li>
-          <li>Nagoya Station → Oasis 21 → Expressway → Meiko Triton</li>
-          <li>1JZ silencer-off experience on the highway</li>
+          <li>JZX100 Chaser Tourer V — private ride through Nagoya</li>
+          <li>Nagoya Station → Oasis 21 → Nagoya Expressway → Meiko Triton</li>
+          <li>Expressway run — watch the city fade into the industrial waterfront</li>
           <li>Photo stops at each location</li>
-          <li>FamilyMart stop — one drink on the house</li>
+          <li>FamilyMart stop on the way back — one drink on us</li>
           <li>Additional spots available on request — ¥3,000 per location</li>
         </ul>
         <a href="https://www.airbnb.jp/experiences/6938551?s=67&unique_share_id=44b1274b-82cf-4dbd-b92b-be43bf6dc6e4"
@@ -1412,7 +1797,7 @@
       <div class="host-card">
         <div class="host-avatar-placeholder">CH</div>
         <div>
-          <p class="host-name">Chihiro</p>
+          <p class="host-name">Hiromu</p>
           <p class="host-title">JZX100 owner · Nagoya-based · Airbnb Host</p>
         </div>
       </div>
@@ -1420,26 +1805,127 @@
   </div>
 </section>
 
+<!-- REVIEWS -->
+<section style="background:var(--dark2); border-top:1px solid var(--border); padding:4rem 2.5rem;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <p class="section-label reveal" style="margin-bottom:1.5rem;">Guest Reviews</p>
+    <div class="reveal delay-1" style="border-left:2px solid var(--gold); padding-left:1.5rem;">
+      <div style="display:flex; gap:0.2rem; margin-bottom:0.75rem;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p style="font-size:0.9rem; line-height:1.8; color:var(--off-white); margin-bottom:1rem;">"I had an amazing experience learning about Nagoya's deep connection to Japan's automotive industry and its street racing culture. Riding in the JZX100 Chaser through the city and port areas really felt like stepping into 90s JDM culture. The host was truly passionate about cars and shared many interesting stories about Japanese street car culture, tuning, and the history behind the Chaser. He also kindly took me to several famous spots around Nagoya and made the entire experience very welcoming and memorable. Highly recommended for anyone interested in JDM cars, Japanese car culture, or simply experiencing a different side of Nagoya!"</p>
+      <p style="font-family:'Barlow Condensed',sans-serif; font-size:0.78rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--mid);">L.H. — Airbnb Guest</p>
+    </div>
+    <p style="font-size:0.82rem; color:var(--mid); margin-top:1.5rem; font-style:italic;">Every review means the world — thank you for riding with us.</p>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">JDM<span>.</span>NAGOYA</div>
   <ul class="footer-links">
-    <li><a href="https://www.airbnb.jp/experiences/6938551?s=67&unique_share_id=44b1274b-82cf-4dbd-b92b-be43bf6dc6e4" target="_blank" rel="noopener">Airbnb</a></li>
-    <li><a href="https://www.tiktok.com/@jzx100_chaser_v" target="_blank" rel="noopener">TikTok</a></li>
-    <li><a href="https://www.instagram.com/jzx100_chaser_v7" target="_blank" rel="noopener">Instagram</a></li>
+    <li><a href="https://www.airbnb.jp/experiences/6938551?s=67&unique_share_id=44b1274b-82cf-4dbd-b92b-be43bf6dc6e4" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:0.4rem;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+      Airbnb
+    </a></li>
+    <li><a href="https://www.tiktok.com/@jzx100_chaser_v" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:0.4rem;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+      TikTok
+    </a></li>
+    <li><a href="https://www.instagram.com/jzx100_chaser_v7" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:0.4rem;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      Instagram
+    </a></li>
   </ul>
   <p class="footer-copy">© 2026 JDM Nagoya</p>
 </footer>
 
 <script>
+// Cursor effect
+const cursorDot = document.getElementById('cursorDot');
+const cursorRing = document.getElementById('cursorRing');
+let mouseX = 0, mouseY = 0;
+let ringX = 0, ringY = 0;
+
+window.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+  cursorDot.style.left = mouseX + 'px';
+  cursorDot.style.top = mouseY + 'px';
+
+  // パーティクル生成
+  if (Math.random() > 0.6) {
+    const p = document.createElement('div');
+    p.className = 'cursor-particle';
+    p.style.left = mouseX + 'px';
+    p.style.top = mouseY + 'px';
+    p.style.opacity = '0.8';
+    document.body.appendChild(p);
+    const angle = Math.random() * Math.PI * 2;
+    const dist = Math.random() * 30 + 10;
+    const duration = Math.random() * 600 + 400;
+    p.animate([
+      { transform: 'translate(-50%,-50%) scale(1)', opacity: 0.8 },
+      { transform: `translate(calc(-50% + ${Math.cos(angle)*dist}px), calc(-50% + ${Math.sin(angle)*dist}px)) scale(0)`, opacity: 0 }
+    ], { duration, easing: 'ease-out' }).onfinish = () => p.remove();
+  }
+});
+
+// リングは遅延追従
+function animateRing() {
+  ringX += (mouseX - ringX) * 0.12;
+  ringY += (mouseY - ringY) * 0.12;
+  cursorRing.style.left = ringX + 'px';
+  cursorRing.style.top = ringY + 'px';
+  requestAnimationFrame(animateRing);
+}
+animateRing();
+
+// ホバー時にリング拡大
+document.querySelectorAll('a, button, .gallery-item, .exp-step').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursorRing.style.width = '56px';
+    cursorRing.style.height = '56px';
+    cursorRing.style.borderColor = 'rgba(201,168,76,0.9)';
+  });
+  el.addEventListener('mouseleave', () => {
+    cursorRing.style.width = '32px';
+    cursorRing.style.height = '32px';
+    cursorRing.style.borderColor = 'rgba(201,168,76,0.5)';
+  });
+});
+
+// Loader
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('hidden');
+  }, 1800);
+});
+
 // Nav toggle
 const toggle = document.getElementById('navToggle');
+const navClose = document.getElementById('navClose');
 const nav = document.getElementById('nav');
+
 toggle.addEventListener('click', () => {
-  nav.classList.toggle('nav-open');
+  nav.classList.add('nav-open');
+  document.body.style.overflow = 'hidden';
 });
+
+navClose.addEventListener('click', () => {
+  nav.classList.remove('nav-open');
+  document.body.style.overflow = '';
+});
+
 document.querySelectorAll('.nav-links a').forEach(a => {
-  a.addEventListener('click', () => nav.classList.remove('nav-open'));
+  a.addEventListener('click', () => {
+    nav.classList.remove('nav-open');
+    document.body.style.overflow = '';
+  });
 });
 
 // Nav scroll effect
