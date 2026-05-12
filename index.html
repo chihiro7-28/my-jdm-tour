@@ -184,13 +184,29 @@
     z-index: 1;
   }
 
-  .hero-img {
+  .hero-slides {
     position: absolute;
     inset: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    z-index: 0;
+  }
+
+  .hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease;
     filter: brightness(0.7) contrast(1.1);
+    transform: scale(1.05);
+    animation: slideZoom 8s ease forwards;
+  }
+
+  .hero-slide.active { opacity: 1; }
+
+  @keyframes slideZoom {
+    from { transform: scale(1.05); }
+    to { transform: scale(1); }
   }
 
   .hero-content {
@@ -1412,8 +1428,11 @@
 
 <!-- HERO -->
 <section id="hero">
-  <!-- Replace src below with your best car photo -->
-  <img class="hero-img" src="https://chihiro7-28.github.io/my-jdm-tour/images/DSC02982.JPG" alt="JZX100 Chaser Tourer V in Nagoya at night" loading="eager">
+  <div class="hero-slides">
+    <div class="hero-slide active" style="background-image:url('https://chihiro7-28.github.io/my-jdm-tour/images/DSC02982.JPG');"></div>
+    <div class="hero-slide" style="background-image:url('https://chihiro7-28.github.io/my-jdm-tour/images/chaser4.jpg');"></div>
+    <div class="hero-slide" style="background-image:url('https://chihiro7-28.github.io/my-jdm-tour/images/DSC03029.JPG');"></div>
+  </div>
   <div class="hero-bg"></div>
   <div class="hero-content">
     <p class="hero-eyebrow">Nagoya — Japan</p>
@@ -1905,6 +1924,15 @@ window.addEventListener('load', () => {
     document.getElementById('loader').classList.add('hidden');
   }, 1800);
 });
+
+// Hero slideshow
+const heroSlides = document.querySelectorAll('.hero-slide');
+let heroIndex = 0;
+setInterval(() => {
+  heroSlides[heroIndex].classList.remove('active');
+  heroIndex = (heroIndex + 1) % heroSlides.length;
+  heroSlides[heroIndex].classList.add('active');
+}, 5000);
 
 // Nav toggle
 const toggle = document.getElementById('navToggle');
