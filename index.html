@@ -524,9 +524,82 @@ html[data-motion="0"] .marquee .run{animation:none}
 .lb-thumbs img.sel{opacity:1;border-color:var(--mag)}
 .lb-thumbs.solo{display:none}
 
+/* ============== LOADER ============== */
+#loader{
+  position:fixed;inset:0;z-index:9999;
+  background:#05060f;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:2rem;
+  transition:opacity .8s ease,visibility .8s ease;
+}
+#loader.out{opacity:0;visibility:hidden}
+
+.loader-ring-wrap{
+  position:relative;width:120px;height:120px;
+  display:flex;align-items:center;justify-content:center;
+}
+.loader-ring{
+  position:absolute;inset:0;
+  border-radius:50%;
+  border:2px solid transparent;
+  animation:spin 1.2s linear infinite;
+}
+.loader-ring:nth-child(1){
+  border-top-color:#00e08a;
+  border-right-color:#00e08a;
+  filter:drop-shadow(0 0 6px #00e08a);
+}
+.loader-ring:nth-child(2){
+  inset:10px;
+  border-bottom-color:#22e6ff;
+  border-left-color:#22e6ff;
+  animation-duration:1.8s;
+  animation-direction:reverse;
+  filter:drop-shadow(0 0 6px #22e6ff);
+}
+.loader-ring:nth-child(3){
+  inset:22px;
+  border-top-color:rgba(0,224,138,.4);
+  border-right-color:rgba(34,230,255,.4);
+  animation-duration:2.4s;
+}
+.loader-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:#00e08a;
+  box-shadow:0 0 12px #00e08a,0 0 24px #00e08a;
+  animation:pulse 1.2s ease-in-out infinite;
+}
+.loader-text{
+  font-family:"JetBrains Mono",monospace;
+  font-size:.72rem;letter-spacing:.4em;text-transform:uppercase;
+  color:rgba(139,147,196,.6);
+  animation:blink 1.4s ease-in-out infinite;
+}
+.loader-brand{
+  font-family:"Saira Condensed",sans-serif;
+  font-size:1.6rem;font-weight:800;letter-spacing:.2em;
+  color:#e9ecff;
+}
+.loader-brand span{color:#00e08a;}
+
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+@keyframes blink{0%,100%{opacity:.6}50%{opacity:.2}}
 </style>
 </head>
 <body>
+
+<!-- ============== LOADER ============== -->
+<div id="loader">
+  <div class="loader-ring-wrap">
+    <div class="loader-ring"></div>
+    <div class="loader-ring"></div>
+    <div class="loader-ring"></div>
+    <div class="loader-dot"></div>
+  </div>
+  <div class="loader-brand">JDM<span>.</span>NAGOYA</div>
+  <div class="loader-text">Initializing · JZX100</div>
+</div>
 
 <!-- ============== NAV ============== -->
 <nav class="nav" id="nav">
@@ -1068,6 +1141,14 @@ html[data-motion="0"] .marquee .run{animation:none}
     });
   }
 })();
+
+// Loader
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    var loader = document.getElementById('loader');
+    if (loader) loader.classList.add('out');
+  }, 1800);
+});
 
 </script>
 
